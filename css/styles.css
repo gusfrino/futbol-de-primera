@@ -1,0 +1,309 @@
+/*
+#12EB00
+#0CA600
+#40B536
+#097300
+#DCF2DA
+*/
+*{
+    margin: 0;
+padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+/* header  */
+header {
+    background-color: #0CA600; /* Fondo verde */
+    padding: 1rem;
+    width: 100%;
+height: 100%;
+}
+header nav ul { 
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;  
+    font-weight: bold;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    flex-direction: row; /*predeterminado*/
+
+   
+}
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header li {
+    display: inline-block;
+    margin-right: 100px;
+   justify-content: center;
+
+
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilos específicos para el header */
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: end;
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+
+.barra-busqueda {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .barra-busqueda input[type="text"] {
+    display: flex;
+    justify-content: center;
+    padding: 6px 50px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .barra-busqueda button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 6px;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  /* Opcional: Ajustar estilos del ícono */
+
+
+.iniciar-sesion button{
+    padding: 2px;
+    margin-left: 10px;
+    
+    border: none;
+    border-radius: 10px;
+}
+
+
+/* fin de header  */
+
+/* main */
+section h1 {
+    color: black;
+    margin-left: 250px;
+    margin-top: 40px;
+    font-size: 2em;
+    color: black;
+    font-family: sans-serif;
+}
+main{
+     font-size: 15px;
+    color: black;
+    font-family: sans-serif;
+}
+
+main section h2 {
+    font-size: 20px;
+    font-weight: bold;
+
+
+}
+.noticia {
+    background-color: rgb(255, 255, 255);
+    width: 800px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-top: 40px;
+    
+}
+
+.noticia img {
+    width: 300px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+.noticias a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* Estilos adicionales */
+h2 {
+    margin-top: 0; /* Elimina el margen superior del título */
+}
+
+section div article img {
+    width: 250px;
+    margin-right: 10px;  
+} 
+main section h1{
+    display: flex;
+    justify-content: start;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* footer */
+footer {
+    background-color: rgb(170, 168, 168);
+}
+.grid_footer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin-top: 40px;
+}
+.iconosixf {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+h3 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.iconosai {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+/* fin footer */
+
+/* ficha partidos */
+.partido {
+    display: flex;
+    border: solid 1px rgb(206, 204, 204);
+    border-radius: 10px;
+    background-color: rgb(218, 218, 218);
+    padding: 5px;
+    width: 800PX;
+    height: 30px;
+    margin-top: 40px;
+
+}
+
+
+/* ficha partidos */
+
+
+/* ficahas de estadios */
+
+.grid_estadios {
+    display: grid;
+    grid-template-columns: 425px 425px;
+    justify-content: center;
+    font-size: 10px
+}
+
+
+.ficha { 
+    border: solid 1px rgb(206, 204, 204);
+    border-radius: 10px;
+    background-color: rgb(218, 218, 218);
+    padding: 5px;
+    display: inline-block;
+    font-size: 10px;
+    width: 400PX;
+    height: 325px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.ficha img {
+    border-radius: 10px;
+    width: 100%;
+    height: 75%;
+}
+.informacion { 
+    display: flex;
+}
+.ficha h2 {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+}
+
+
+.ficha h3 { 
+    display: flex;
+    margin-left: 5px;
+ } 
+.capacidad {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: 20px 0px 0px 150px;
+    font-size: 12px;
+    
+}
+ .info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    font-size: 12px;
+ }
+ .info ul {
+    margin-top: 3px;
+ }
+ .capacidad ul {
+    margin-top: 5px;
+ }
+
+ /* ficahas de estadios */
+
+
+
+/* Media query para tabletas */
+@media screen and (min-width: 768px) {
+    .grid_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .grid_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+
+
+
