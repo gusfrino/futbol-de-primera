@@ -7,45 +7,51 @@
 */
 *{
     margin: 0;
-padding: 0;
+    padding: 0;
+
 }
+html {
+    font-size: 10px; 
+    /* 1rem = 10px */
+}
+
 body {
     font-family: Arial, sans-serif;
 }
+
 /* header  */
 header {
     background-color: #0CA600; /* Fondo verde */
     padding: 1rem;
     width: 100%;
-height: 100%;
+    height: 100%;
 }
 header nav ul { 
     list-style-type: none;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;  
+    font-size: 2rem;  
     font-weight: bold;
     font-style: normal;
     display: flex;
     justify-content: center;
-    flex-direction: row; /*predeterminado*/
-
-   
+    flex-direction: row; 
 }
+
 header ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 1rem 0rem -8rem 9rem;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: top;
 }
 
 header li {
     display: inline-block;
-    margin-right: 100px;
+    margin-right: 10rem;
    justify-content: center;
-
-
+   margin-top: 2rem;
+   
 }
 
 header a {
@@ -65,8 +71,8 @@ header a:hover {
     flex-direction: row;
     align-content: center;
     justify-content: end;
-    margin-bottom: 20px;
-    margin-right: 30px;
+    margin-bottom: 2rem;
+    margin-right: 3rem;
 }
 
 .barra-busqueda {
@@ -77,19 +83,19 @@ header a:hover {
   .barra-busqueda input[type="text"] {
     display: flex;
     justify-content: center;
-    padding: 6px 50px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    padding: 0.6rem 5rem;
+    border: 0.01rem solid #ccc;
+    border-radius: 1rem;
   }
   
   .barra-busqueda button {
     position: absolute;
-    top: 0;
-    right: 0;
-    padding: 6px;
+    top: 0rem;
+    right: 0rem;
+    padding: 0.6rem;
     background-color: #f2f2f2;
     border: none;
-    border-radius: 10px;
+    border-radius: 1rem;
     cursor: pointer;
   }
   
@@ -97,52 +103,64 @@ header a:hover {
 
 
 .iniciar-sesion button{
-    padding: 2px;
-    margin-left: 10px;
-    
+    padding: 0.5rem;
+    margin-left: 1rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 1rem;
 }
-
 
 /* fin de header  */
 
 /* main */
-section h1 {
-    color: black;
-    margin-left: 250px;
-    margin-top: 40px;
-    font-size: 2em;
+main{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
     color: black;
     font-family: sans-serif;
+    margin-top: 2rem;
 }
-main{
-     font-size: 15px;
+ .titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: black;
+    margin-top: 10rem;
+    margin-right: 80rem;
+    font-size: 3rem;
     color: black;
     font-family: sans-serif;
 }
 
+ 
+
 main section h2 {
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: bold;
 
 
 }
 .noticia {
     background-color: rgb(255, 255, 255);
-    width: 800px;
-    height: 300px;
+    width: 80rem;
+    height: 25rem;
     display: flex;
     align-items: center;
     justify-items: center;
-    margin-top: 40px;
+    margin-top: 2rem;
+    padding: 1rem;
+   
     
 }
 
 .noticia img {
-    width: 300px;
-    margin-right: 20px;
-    border-radius: 10px;
+    width: 30rem;
+    margin-right: 2rem;
+    border-radius: 1rem;
+}
+.noticia p {
+    font-size: 1.5rem;
 }
 .noticias a {
     color: black;
@@ -151,25 +169,6 @@ main section h2 {
 
 
 /* Estilos adicionales */
-h2 {
-    margin-top: 0; /* Elimina el margen superior del título */
-}
-
-section div article img {
-    width: 250px;
-    margin-right: 10px;  
-} 
-main section h1{
-    display: flex;
-    justify-content: start;
-}
-
-main {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
 /* footer */
 footer {
     background-color: rgb(170, 168, 168);
@@ -178,24 +177,23 @@ footer {
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: center;
-   margin-top: 40px;
+   margin-top: 1rem;
 }
 .iconosixf {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: center; 
 }
 h3 {
-    margin-top: 10px;
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
 }
 .iconosai {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: center; 
@@ -203,48 +201,78 @@ h3 {
 /* fin footer */
 
 /* ficha partidos */
+.partidos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .partido {
     display: flex;
-    border: solid 1px rgb(206, 204, 204);
-    border-radius: 10px;
+    flex-direction: row;
+    justify-content: center;
+    border: solid 0.01rem rgb(206, 204, 204);
+    border-radius: 1rem;
     background-color: rgb(218, 218, 218);
-    padding: 5px;
-    width: 800PX;
-    height: 30px;
-    margin-top: 40px;
+    padding: 0.5rem;
+    width: 70rem;
+    height: 3rem;
+    margin-top: 4rem;
 
 }
-
 
 /* ficha partidos */
 
 
 /* ficahas de estadios */
-
-.grid_estadios {
+h2 {
+    padding: 0rem;
+    margin-top: -1rem;
+}
+.ficha {
     display: grid;
-    grid-template-columns: 425px 425px;
+    grid-template-columns: 42.5rem 42.5rem;
+    grid-template-rows: 33rem 33rem 33rem  33rem 33rem 33rem  33rem 33rem 33rem  33rem 33rem 33rem  33rem 33rem;
+    grid-template-areas: 
+    "ficha_1 ficha_2"
+    "ficha_3 ficha_4"
+    "ficha_5 ficha_6"
+    "ficha_7 ficha_8"
+    "ficha_9 ficha_10"
+    "ficha_11 ficha_12"
+    "ficha_13 ficha_14"
+    "ficha_15 ficha_16"
+    "ficha_17 ficha_18"
+    "ficha_19 ficha_20"
+    "ficha_21 ficha_22"
+    "ficha_23 ficha_24"
+    "ficha_25 ficha_26"
+    "ficha_27 ficha_28";
+    grid-column-gap:0rem;
+    grid-row-gap: 1rem;
+    width: 100%;
+    height: 100vh;
     justify-content: center;
-    font-size: 10px
+    font-size: 1rem;
 }
 
 
+
 .ficha { 
-    border: solid 1px rgb(206, 204, 204);
-    border-radius: 10px;
+    border: solid 0.01rem rgb(206, 204, 204);
+    border-radius: 1rem;
     background-color: rgb(218, 218, 218);
-    padding: 5px;
+    padding: 0.5rem;
     display: inline-block;
-    font-size: 10px;
-    width: 400PX;
-    height: 325px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    font-size: 1rem;
+    width: 40rem;
+    height: 32.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     overflow: hidden;
 }
 
 .ficha img {
-    border-radius: 10px;
+    border-radius: 1rem;
     width: 100%;
     height: 75%;
 }
@@ -254,56 +282,31 @@ h3 {
 .ficha h2 {
     display: flex;
     flex-direction: row;
-    font-size: 12px;
-    margin-left: 5px;
-    margin-bottom: 0px;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+    margin-right: 6rem;
+    margin-bottom: 0rem;
+    margin-top: 0.5rem;
 }
 
-
-.ficha h3 { 
-    display: flex;
-    margin-left: 5px;
- } 
 .capacidad {
     display: flex;
     flex-direction: column;
-    align-items: end;
-    margin: 20px 0px 0px 150px;
-    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
     
 }
+
  .info {
     display: flex;
     flex-direction: column;
-    margin-top: 15px;
-    font-size: 12px;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
  }
- .info ul {
-    margin-top: 3px;
- }
- .capacidad ul {
-    margin-top: 5px;
- }
+ 
+
 
  /* ficahas de estadios */
-
-
-
-/* Media query para tabletas */
-@media screen and (min-width: 768px) {
-    .grid_container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .grid_container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-}
-
-
-
-
-
+    
+       
