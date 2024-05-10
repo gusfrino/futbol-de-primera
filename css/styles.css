@@ -14,40 +14,29 @@ html {
     font-size: 10px; 
     /* 1rem = 10px */
 }
-
-body {
-    font-family: Arial, sans-serif;
-}
-
 /* header  */
 header {
     background-color: #0CA600; /* Fondo verde */
     padding: 1rem;
-    width: 100%;
-    height: 100%;
 }
 header nav ul { 
-    list-style-type: none;
+    display: flex;
+    justify-content: center; 
+    align-items: top;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 1rem 0rem -8rem 9rem;
     font-size: 2rem;  
     font-weight: bold;
     font-style: normal;
-    display: flex;
-    justify-content: center;
-    flex-direction: row; 
-}
-
-header ul {
     list-style: none;
     padding: 0;
-    margin: 1rem 0rem -8rem 9rem;
-    display: flex;
-    flex-direction: row;
-    align-items: top;
+    
 }
 
 header li {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    min-width: 0.5rem;
     margin-right: 10rem;
    justify-content: center;
    margin-top: 2rem;
@@ -68,9 +57,8 @@ header a:hover {
 
 .contenedor {
     display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: end;
+    flex-direction: row; 
+    justify-content: space-between;
     margin-bottom: 2rem;
     margin-right: 3rem;
 }
@@ -82,7 +70,6 @@ header a:hover {
   
   .barra-busqueda input[type="text"] {
     display: flex;
-    justify-content: center;
     padding: 0.6rem 5rem;
     border: 0.01rem solid #ccc;
     border-radius: 1rem;
@@ -99,9 +86,7 @@ header a:hover {
     cursor: pointer;
   }
   
-  /* Opcional: Ajustar estilos del ícono */
-
-
+  
 .iniciar-sesion button{
     padding: 0.5rem;
     margin-left: 1rem;
@@ -117,9 +102,11 @@ main{
     flex-direction: column;
     align-items: center;
     font-size: 2rem;
+    min-width: 0.5rem;
     color: black;
     font-family: sans-serif;
     margin-top: 2rem;
+    margin-bottom: 5rem;
 }
  .titulo {
     display: flex;
@@ -143,8 +130,8 @@ main section h2 {
 }
 .noticia {
     background-color: rgb(255, 255, 255);
-    width: 80rem;
-    height: 25rem;
+    max-width:80rem;
+    max-height: 25rem;
     display: flex;
     align-items: center;
     justify-items: center;
@@ -205,17 +192,19 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .partido {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: center;
     border: solid 0.01rem rgb(206, 204, 204);
     border-radius: 1rem;
     background-color: rgb(218, 218, 218);
     padding: 0.5rem;
     width: 70rem;
-    height: 3rem;
+    height: 6rem;
     margin-top: 4rem;
 
 }
@@ -228,29 +217,27 @@ h2 {
     padding: 0rem;
     margin-top: -1rem;
 }
-.ficha {
+
+.titulo-estadios h1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        color: black;
+        margin-top: 10rem;
+        margin-right: 80rem;
+        font-size: 2.5rem;
+        color: black;
+        font-family: sans-serif;
+}
+    
+
+
+.grid_estadios {
     display: grid;
     grid-template-columns: 42.5rem 42.5rem;
-    grid-template-rows: 33rem 33rem 33rem  33rem 33rem 33rem  33rem 33rem 33rem  33rem 33rem 33rem  33rem 33rem;
-    grid-template-areas: 
-    "ficha_1 ficha_2"
-    "ficha_3 ficha_4"
-    "ficha_5 ficha_6"
-    "ficha_7 ficha_8"
-    "ficha_9 ficha_10"
-    "ficha_11 ficha_12"
-    "ficha_13 ficha_14"
-    "ficha_15 ficha_16"
-    "ficha_17 ficha_18"
-    "ficha_19 ficha_20"
-    "ficha_21 ficha_22"
-    "ficha_23 ficha_24"
-    "ficha_25 ficha_26"
-    "ficha_27 ficha_28";
+    grid-template-rows: 33rem 33rem;
     grid-column-gap:0rem;
     grid-row-gap: 1rem;
-    width: 100%;
-    height: 100vh;
     justify-content: center;
     font-size: 1rem;
 }
@@ -305,8 +292,510 @@ h2 {
     font-size: 1.2rem;
  }
  
-
-
  /* ficahas de estadios */
+
+.table-striped { 
+    width: 75rem;
+    height: 80rem;
+    font-size: 1rem;
+    border: solid;
+}
+.table-striped tr {
+    display: flex;
+    justify-content: space-around;
     
+    
+}
+
+table img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 7rem;
+    height: 6rem;
+}
+
+ @media screen and (max-width: 667px) 
+ {
+    header {
+        background-color: #0CA600;
+    }
+    header nav ul { 
+        margin: 0rem;
+        display: flex;
+        flex-direction: row;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0rem 0rem -5rem 0rem;
+        font-size: 1rem;  
+        font-weight: bold;
+        font-style: normal;
        
+    }
+    header li {
+        
+        display: flex;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.8rem;  
+        font-weight: bold;
+        font-style: normal;
+        margin: 1rem;
+  
+       
+    }
+    header li img {
+        height: 5rem;
+        }
+    .contenedor {
+        display: flex;
+        flex-direction: column; 
+        justify-content:center;
+        margin-bottom: 1rem;
+        margin-right: 1.5rem;
+    }
+    
+    .barra-busqueda {
+        margin-right: 10rem;
+      }
+      
+      .barra-busqueda input[type="text"] {
+        padding: 0.3rem 2rem;
+        border: 0.01rem solid #ccc;
+        border-radius: 1rem;
+      }
+      
+      .barra-busqueda button {
+        top: 0rem;
+        right: 0rem;
+        padding: 0.3rem;
+        background-color: #f2f2f2;
+        border: none;
+        border-radius: 1rem;
+
+    }
+      
+        .iniciar-sesion button{
+            padding: 0.2rem;
+            margin-top: 1rem;
+            margin-left: 0.5rem;
+            border: none;
+            border-radius: 1rem;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .titulo {
+        display: flex;
+        flex-direction: row;
+        color: black;
+        margin-top: 4rem;
+        margin-right: 23rem;
+        font-size: 3rem;
+        color: black;
+        font-family: sans-serif;
+    }
+    .titulo-estadios h1 {
+        display: flex;
+        flex-direction: row;
+        color: black;
+        margin-top: 4rem;
+        margin-right: 23rem;
+        font-size: 2.5rem;
+        color: black;
+        font-family: sans-serif;
+
+    }
+    main section h2 {
+        font-size: 1rem;
+        font-weight: bold;
+    
+    
+    }
+    .noticia {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        margin-top: 2rem;
+        padding: 1rem;
+        background-color: rgb(255, 255, 255);
+        min-width: 30rem;
+        min-height: 11rem;
+        
+       
+        
+    }
+    .noticia img {
+        width: 10rem;
+        margin-right: 2rem;
+        border-radius: 1rem;
+    }
+    .noticia p {
+        font-size: 0.8rem;
+    }
+    .noticias a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .grid_estadios {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .partidos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .partido {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border: solid 0.01rem rgb(206, 204, 204);
+        border-radius: 1rem;
+        background-color: rgb(218, 218, 218);
+        padding: 0.5rem;
+        width: 25rem;
+        min-width: 6rem;
+        margin-top: 4rem;
+    
+    }
+    .partido p {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 0.9rem;
+        
+    }
+ }
+
+    
+    @media screen and (max-width: 1023px) 
+    {
+    
+    header nav ul { 
+        margin: 0rem;
+        display: flex;
+        flex-direction: row;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0rem 0rem -5rem 0rem;
+        font-size: 1rem;  
+        font-weight: bold;
+        font-style: normal;
+       
+    }
+    header li {
+        
+        display: flex;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.6rem;  
+        font-weight: bold;
+        font-style: normal;
+        margin: 1rem;
+  
+       
+    }
+    header li img {
+        min-height: 5rem;
+        }
+        .contenedor {
+            display: flex;
+            flex-direction: row; 
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            margin-right: 3rem;
+        }
+    
+        .barra-busqueda {
+            position: relative;
+            display: inline-block;
+          }
+      
+          .barra-busqueda input[type="text"] {
+            display: flex;
+            padding: 0.6rem 5rem;
+            border: 0.01rem solid #ccc;
+            border-radius: 1rem;
+          }
+          
+          .barra-busqueda button {
+            position: absolute;
+            top: 0rem;
+            right: 0rem;
+            padding: 0.6rem;
+            background-color: #f2f2f2;
+            border: none;
+            border-radius: 1rem;
+            cursor: pointer;
+          }
+          
+          
+        .iniciar-sesion button{
+            padding: 0.5rem;
+            margin-left: 1rem;
+            border: none;
+            border-radius: 1rem;
+        }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .titulo {
+        display: flex;
+        flex-direction: row;
+        color: black;
+        margin-top: 4rem;
+        margin-right: 65rem;
+        font-size: 3rem;
+        color: black;
+        font-family: sans-serif;
+    }
+    .titulo-estadios h1 {
+        display: flex;
+        flex-direction: row;
+        color: black;
+        margin-top: 4rem;
+        margin-left: 10rem;
+        font-size: 2.5rem;
+        color: black;
+        font-family: sans-serif;
+
+    }
+    main section h2 {
+        font-size: 1rem;
+        font-weight: bold;
+    
+    
+    }
+    .noticia {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        margin-top: 2rem;
+        padding: 1rem;
+        background-color: rgb(255, 255, 255);
+        min-width: 30rem;
+        min-height: 11rem;
+        
+       
+        
+    }
+    .noticia img {
+        width: 10rem;
+        margin-right: 2rem;
+        border-radius: 1rem;
+    }
+    .noticia p {
+        font-size: 0.8rem;
+    }
+    .noticias a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .grid_estadios {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .partidos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .partido {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border: solid 0.01rem rgb(206, 204, 204);
+        border-radius: 1rem;
+        background-color: rgb(218, 218, 218);
+        padding: 0.5rem;
+        width: 25rem;
+        min-width: 6rem;
+        margin-top: 4rem;
+    
+    }
+    .partido p {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 0.9rem;
+        
+    }
+ }
+ @media screen and (max-width: 1024px)
+ {
+    
+    header nav ul { 
+        margin: 0rem;
+        display: flex;
+        flex-direction: row;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0rem 0rem -5rem 0rem;
+        font-size: 1rem;  
+        font-weight: bold;
+        font-style: normal;
+       
+    }
+    header li {
+        
+        display: flex;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.6rem;  
+        font-weight: bold;
+        font-style: normal;
+        margin: 1rem;
+  
+       
+    }
+    header li img {
+        min-height: 5rem;
+        }
+        .contenedor {
+            display: flex;
+            flex-direction: row; 
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            margin-right: 3rem;
+        }
+    
+        .barra-busqueda {
+            position: relative;
+            display: inline-block;
+          }
+      
+          .barra-busqueda input[type="text"] {
+            display: flex;
+            padding: 0.6rem 5rem;
+            border: 0.01rem solid #ccc;
+            border-radius: 1rem;
+          }
+          
+          .barra-busqueda button {
+            position: absolute;
+            top: 0rem;
+            right: 0rem;
+            padding: 0.6rem;
+            background-color: #f2f2f2;
+            border: none;
+            border-radius: 1rem;
+            cursor: pointer;
+          }
+          
+          
+        .iniciar-sesion button{
+            padding: 0.5rem;
+            margin-left: 1rem;
+            border: none;
+            border-radius: 1rem;
+        }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .titulo {
+        display: flex;
+        flex-direction: row;
+        color: black;
+        margin-top: 4rem;
+        margin-right: 65rem;
+        font-size: 3rem;
+        color: black;
+        font-family: sans-serif;
+    }
+    .titulo-estadios h1 {
+        display: flex;
+        flex-direction: row;
+        color: black;
+        margin-top: 4rem;
+        margin-left: 10rem;
+        font-size: 2.5rem;
+        color: black;
+        font-family: sans-serif;
+
+    }
+    main section h2 {
+        font-size: 1rem;
+        font-weight: bold;
+    
+    
+    }
+    .noticia {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        margin-top: 2rem;
+        padding: 1rem;
+        background-color: rgb(255, 255, 255);
+        min-width: 30rem;
+        min-height: 11rem;
+        
+       
+        
+    }
+    .noticia img {
+        width: 10rem;
+        margin-right: 2rem;
+        border-radius: 1rem;
+    }
+    .noticia p {
+        font-size: 0.8rem;
+    }
+    .noticias a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .grid_estadios {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .partidos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .partido {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border: solid 0.01rem rgb(206, 204, 204);
+        border-radius: 1rem;
+        background-color: rgb(218, 218, 218);
+        padding: 0.5rem;
+        width: 25rem;
+        min-width: 6rem;
+        margin-top: 4rem;
+    
+    }
+    .partido p {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 0.9rem;
+        
+    }
+ }
