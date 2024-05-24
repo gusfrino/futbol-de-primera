@@ -108,7 +108,7 @@ body .partidos .container {
   border-radius: 1rem;
   background-color: rgb(255, 255, 255);
   padding: 1rem;
-  width: 80%;
+  width: 45%;
   height: 0, 1%;
   margin-top: 4rem;
 }
@@ -543,7 +543,7 @@ body main .noticias a {
     padding: 1rem;
   }
   body .partidos .container {
-    width: 80%;
+    width: 50%;
   }
 }
 @media (min-width: 320px) and (max-width: 667px) {
