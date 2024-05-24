@@ -389,34 +389,34 @@ body main .noticias a {
     font-size: 7px;
     /* 1rem = 10px */
   }
-  body header {
-    width: 100%;
-    background-color: #0CA600;
-  }
-  body .nav-item {
+  body header .nav-item {
     display: flex;
     flex-direction: row;
-    margin: 0rem 5rem 0rem 10rem;
+    margin: 0rem 0rem 0rem 2rem;
     min-width: 1rem;
     justify-content: center;
     margin-top: 2rem;
   }
-  body .barra-busqueda {
+  body header .nav-link {
+    margin-left: 5rem;
+  }
+  body header .barra-busqueda {
     display: flex;
     flex-direction: end;
     border: none;
     position: auto;
     top: 0rem;
+    margin-left: 3rem;
     margin-right: 9rem;
     padding: 0.5rem;
   }
-  body .contenedor input {
+  body header .contenedor input {
     display: flex;
     flex-direction: row;
     border: solid 0rem;
     border-radius: 1rem;
-    width: 25rem;
-    height: 2.5rem;
+    width: 45rem;
+    height: 4rem;
     padding: 1.5rem;
   }
   body footer {
