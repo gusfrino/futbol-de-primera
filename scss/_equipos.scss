@@ -1,0 +1,43 @@
+body {
+    main {
+        .equipos { 
+            width: 60rem;
+            height: 65rem;
+
+        }
+       
+        .equipos tr {
+            display: flex;
+            justify-content: space-around;
+        }  
+        .equipos td {
+            height: 10rem;
+            width: 15rem ;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .equipos td p {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 0.9rem;
+        }
+        .equipos img {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 8rem;
+            height: 7rem;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #f9f9f9; /*impares */
+        }
+        
+        tbody tr:nth-child(even) {
+            background-color: #a4fab9; /* pares */
+        }
+        
+    }
+}

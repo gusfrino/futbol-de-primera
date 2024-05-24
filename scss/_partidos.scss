@@ -1,0 +1,93 @@
+body {
+    .partidos {
+            .container {
+                display: flex;
+                align-content:center;
+                border: solid 0.01rem rgb(207, 206, 206);
+                box-shadow: 0.2rem 0.2rem 0.2rem rgb(207, 206, 206); 
+                border-radius: 1rem;
+                background-color: rgb(255, 255, 255);
+                padding: 1rem;
+                width: 80%;
+                height: 0,01%;
+                margin-top: 4rem;
+                
+            }
+            .info-ficha {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 100%;
+                padding: 0rem 0rem 0rem 0rem;
+                position: relative;
+            }
+            .equipo-1 {
+                padding: 0rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-left: 0rem;
+                width: 70%;
+                position: relative; 
+            }
+           
+            .equipo-2{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-left: 0rem;
+                margin-right: 0rem;
+                width: 70%;
+                position: relative;
+            }
+            .fecha-fecha1 {
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                justify-content: center;
+                margin-top: 4rem;
+                margin-bottom: 1rem;
+                width: 100%;
+            }
+            ul {
+                display: flex;
+                flex-direction: row;
+                margin: 2rem 2rem 3rem 2rem;
+                width: 100%;
+            }    
+            div .nombre-1 {
+                display: flex;
+                flex-direction: row;
+                margin-left: 1rem;
+            }
+            div .nombre-2 {
+                display: flex;
+                flex-direction: row;
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+            .fecha-fecha {
+                padding: 0rem;
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                align-items: center;
+                margin-top: -2rem;
+            }
+        
+            li p {
+                display: flex;
+                flex-direction: row;
+                font-size: 2rem;
+            }
+
+            li img {
+                height:8rem;
+                width: 7rem;
+            }
+
+        }
+        
+        
+        
+    }

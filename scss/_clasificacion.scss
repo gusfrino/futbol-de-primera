@@ -1,0 +1,16 @@
+body {
+    main {
+        .clasificacion { 
+            display: flex;
+            flex-direction: column;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #f9f9f9; /*impares */
+        }
+        
+        tbody tr:nth-child(even) {
+            background-color: #a4fab9; /* pares */
+        }
+       
+    }
+}
