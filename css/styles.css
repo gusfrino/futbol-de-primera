@@ -268,7 +268,7 @@ body main .equipos tr {
   justify-content: space-around;
 }
 body main .equipos td {
-  height: 10rem;
+  height: 13rem;
   width: 15rem;
   display: flex;
   flex-direction: column;
@@ -278,7 +278,9 @@ body main .equipos td p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
 }
 body main .equipos img {
   display: flex;
@@ -288,18 +290,30 @@ body main .equipos img {
   height: 7rem;
 }
 body main tbody tr:nth-child(odd) {
-  background-color: #f9f9f9; /*impares */
+  background-color: #eeeeee; /*impares */
 }
 body main tbody tr:nth-child(even) {
   background-color: #a4fab9; /* pares */
 }
 
+body main .clasificacion td {
+  font-size: 3rem;
+}
+body main td strong {
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 1.3rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
 body main .clasificacion {
   display: flex;
   flex-direction: column;
 }
 body main tbody tr:nth-child(odd) {
-  background-color: #f9f9f9; /*impares */
+  background-color: #eeeeee; /*impares */
 }
 body main tbody tr:nth-child(even) {
   background-color: #a4fab9; /* pares */
@@ -310,10 +324,6 @@ html {
   /* 1rem = 10px */
 }
 
-body {
-  overflow-x: scroll;
-  overflow-y: scroll;
-}
 body button {
   border: none;
 }

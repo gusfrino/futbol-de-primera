@@ -1,11 +1,23 @@
 body {
     main {
+        .clasificacion td {
+            font-size: 3rem
+        }
+        td strong {
+            background-color: gray;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 1.3rem;
+            margin-top: 0.2rem;
+            margin-bottom: 0.2rem;
+        }
         .clasificacion { 
             display: flex;
             flex-direction: column;
         }
         tbody tr:nth-child(odd) {
-            background-color: #f9f9f9; /*impares */
+            background-color: #eeeeee; /*impares */
         }
         
         tbody tr:nth-child(even) {
