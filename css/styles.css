@@ -462,10 +462,10 @@ body main .noticias a {
     padding: 1rem;
   }
   .partidos .container {
-    width: 80%;
+    width: 45%;
   }
 }
-@media (min-width: 668px) and (max-width: 1024px) {
+@media (min-width: 669px) and (max-width: 1024px) {
   html {
     font-size: 7px;
     /* 1rem = 10px */
@@ -518,7 +518,7 @@ body main .noticias a {
   body main h1 {
     color: black;
     margin-top: 1rem;
-    margin-left: 40rem;
+    margin-left: 80rem;
     font-size: 3rem;
     color: black;
     font-family: sans-serif;
@@ -543,10 +543,35 @@ body main .noticias a {
     padding: 1rem;
   }
   body .partidos .container {
+    width: 45%;
+  }
+  body .partidos .equipo-1 {
     width: 50%;
+    position: relative;
+  }
+  body .partidos .equipo-2 {
+    width: 50%;
+    position: relative;
+  }
+  body .partidos .fecha-fecha1 {
+    width: 80%;
+  }
+  body .partidos ul {
+    margin: 1rem 1rem 2rem 1rem;
+  }
+  body .partidos .fecha-fecha {
+    margin-top: 0rem;
+  }
+  body .partidos li p {
+    margin-top: 1rem;
+    font-size: 1.7rem;
+  }
+  body .partidos li img {
+    height: 6rem;
+    width: 5rem;
   }
 }
-@media (min-width: 320px) and (max-width: 667px) {
+@media (min-width: 320px) and (max-width: 668px) {
   html {
     font-size: 5px;
     /* 1rem = 5px */
@@ -645,6 +670,31 @@ body main .noticias a {
     font-size: 1.8rem;
   }
   body .partidos .container {
+    width: 45%;
+  }
+  body .partidos .equipo-1 {
+    width: 50%;
+    position: relative;
+  }
+  body .partidos .equipo-2 {
+    width: 50%;
+    position: relative;
+  }
+  body .partidos .fecha-fecha1 {
     width: 80%;
+  }
+  body .partidos ul {
+    margin: 1rem 1rem 2rem 1rem;
+  }
+  body .partidos .fecha-fecha {
+    margin-top: 0rem;
+  }
+  body .partidos li p {
+    margin-top: 1rem;
+    font-size: 1.7rem;
+  }
+  body .partidos li img {
+    height: 6rem;
+    width: 5rem;
   }
 }/*# sourceMappingURL=styles.css.map */
