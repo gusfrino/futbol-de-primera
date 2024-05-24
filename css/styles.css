@@ -108,7 +108,7 @@ body .partidos .container {
   border-radius: 1rem;
   background-color: rgb(255, 255, 255);
   padding: 1rem;
-  width: 45%;
+  width: 60%;
   height: 0, 1%;
   margin-top: 4rem;
 }
@@ -462,7 +462,7 @@ body main .noticias a {
     padding: 1rem;
   }
   .partidos .container {
-    width: 45%;
+    width: 80%;
   }
 }
 @media (min-width: 669px) and (max-width: 1024px) {
@@ -543,10 +543,10 @@ body main .noticias a {
     padding: 1rem;
   }
   body .partidos .container {
-    width: 45%;
+    width: 80%;
   }
   body .partidos .equipo-1 {
-    width: 50%;
+    width: 65%;
     position: relative;
   }
   body .partidos .equipo-2 {
@@ -670,7 +670,7 @@ body main .noticias a {
     font-size: 1.8rem;
   }
   body .partidos .container {
-    width: 45%;
+    width: 80%;
   }
   body .partidos .equipo-1 {
     width: 50%;
