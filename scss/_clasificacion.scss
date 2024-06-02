@@ -17,11 +17,11 @@ body {
             flex-direction: column;
         }
         tbody tr:nth-child(odd) {
-            background-color: #eeeeee; /*impares */
+            background-color: #eeeeee;
         }
         
         tbody tr:nth-child(even) {
-            background-color: #a4fab9; /* pares */
+            background-color: #a4fab9;
         }
        
     }

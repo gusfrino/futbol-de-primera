@@ -45,7 +45,7 @@ body {
             font-size: 5rem;
         }
         h2 {
-            font-size: 2.5rem;
+            font-size: 3.5rem;
             font-weight: bold;
             }
         h3 {
@@ -55,23 +55,24 @@ body {
             }
         .noticia {
                 background-color: rgb(255, 255, 255);
-                max-width:100rem;
-                max-height: 25rem;
+                max-width:150rem;
+                max-height: 30rem;
                 display: flex;
-                align-items: center;
+                align-items: start;
                 justify-items: center;
-                margin-top: 2rem;
-                padding: 1rem;
+                margin-top: 5rem;
+                margin-bottom: 2rem;
+                padding: 2rem;
                 
 
             }
             .noticia img {
-                width: 35rem;
-                margin-right: 2rem;
+                width: 40rem;
+                margin-right: 3rem;
                 border-radius: 1rem;
             }
             .noticia p {
-                font-size: 1.7rem;
+                font-size: 2.5rem;
             }
             .noticias a {
                 color: black;
