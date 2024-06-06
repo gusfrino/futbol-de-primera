@@ -4,24 +4,15 @@
   box-sizing: border-box;
 }
 
-body header {
-  width: 100%;
-  background-color: #0CA600;
-}
 body .container-fluid {
   background-color: #0CA600;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   border-radius: 1rem;
   background-color: none;
-}
-body a {
-  color: rgb(255, 255, 255);
-}
-body a:hover {
-  text-decoration: none;
-  color: white;
 }
 body ul {
   display: flex;
@@ -29,14 +20,15 @@ body ul {
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
+  margin-top: 3.5rem;
   margin-left: auto;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: bold;
   font-style: normal;
   list-style: none;
-  padding: 0;
+  padding: 0.5;
 }
-body .nav-item {
+body li .nav-item {
   display: flex;
   flex-direction: row;
   margin: 0rem 5rem 0rem 10rem;
@@ -44,38 +36,51 @@ body .nav-item {
   justify-content: center;
   margin-top: 2rem;
 }
-body .contenedor {
+body .container-search {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 3rem;
 }
 body .barra-busqueda {
   display: flex;
   flex-direction: end;
-  border: none;
   position: relative;
   top: 0rem;
   right: -5rem;
   padding: 0.5rem;
   background-color: none;
-  border: none;
   cursor: pointer;
 }
 body input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40rem;
+  border: none;
+  border-radius: 1rem;
   font-size: 2rem;
+  background-color: #d3d3d3;
 }
 body button {
   padding: 0.3rem;
-  border: solid 0rem;
   border-radius: 0.5rem;
 }
 body .navbar-toggler {
+  margin-left: 1rem;
+  margin-right: 30rem;
+  border: none;
+}
+body .navbar-toggler-icon {
+  width: 3.5rem;
+}
+body .navbar-brand {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 4rem;
-  border: solid 0rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 body footer {
@@ -189,17 +194,17 @@ body .partidos li img {
 
 body main .grid_estadios {
   display: grid;
-  grid-template-columns: 42.5rem 42.5rem;
-  grid-template-rows: 33rem 33rem;
-  grid-column-gap: 3rem;
-  grid-row-gap: 3rem;
+  grid-template-columns: 60rem 60rem;
+  grid-template-rows: 50.2rem 50.2rem;
+  grid-column-gap: 5rem;
+  grid-row-gap: 5rem;
   justify-content: center;
 }
 body main .ficha {
   border: solid 0.01rem rgb(206, 204, 204);
   border-radius: 1rem;
   background-color: rgb(218, 218, 218);
-  padding: 0.5rem;
+  padding: 1rem;
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -229,7 +234,7 @@ body main .capacidad {
   margin-top: 0.5rem;
 }
 body main .capacidad h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-decoration: underline;
 }
 body main .capacidad ul {
@@ -240,7 +245,7 @@ body main .capacidad ul {
   margin-right: 8rem;
 }
 body main .capacidad li {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 body main .info {
   display: flex;
@@ -249,7 +254,7 @@ body main .info {
   font-size: 0.5rem;
 }
 body main .info h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-decoration: underline;
 }
 body main .info ul {
@@ -261,7 +266,7 @@ body main .info ul {
   margin-left: 0rem;
 }
 body main .info li {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 body main .equipos {
@@ -406,24 +411,16 @@ body main .noticias a {
   body header .nav-link {
     margin-left: 5rem;
   }
-  body header .barra-busqueda {
-    display: flex;
-    flex-direction: end;
-    border: none;
-    position: auto;
-    top: 0rem;
-    margin-left: 3rem;
-    margin-right: 9rem;
+  body header input {
     padding: 0.5rem;
-  }
-  body header .contenedor input {
     display: flex;
-    flex-direction: row;
-    border: solid 0rem;
+    flex-direction: column;
+    align-items: center;
+    width: 40rem;
+    border: none;
     border-radius: 1rem;
-    width: 45rem;
-    height: 4rem;
-    padding: 1.5rem;
+    font-size: 2rem;
+    background-color: #d3d3d3;
   }
   body footer {
     background-color: rgb(170, 168, 168);
@@ -476,6 +473,17 @@ body main .noticias a {
     font-size: 7px;
     /* 1rem = 10px */
   }
+  header input {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 2rem;
+    background-color: #d3d3d3;
+  }
   header .nav-item {
     display: flex;
     flex-direction: row;
@@ -489,15 +497,6 @@ body main .noticias a {
   }
   header .barra-busqueda {
     margin-right: 6rem;
-  }
-  header .contenedor input {
-    display: flex;
-    flex-direction: row;
-    border: solid 0rem;
-    border-radius: 1rem;
-    width: 25rem;
-    height: 2.5rem;
-    padding: 1.5rem;
   }
   body footer {
     background-color: rgb(170, 168, 168);
@@ -536,13 +535,20 @@ body main .noticias a {
     max-width: 80rem;
     max-height: 25rem;
     display: flex;
-    align-items: start;
+    align-items: cen;
     justify-items: center;
     margin-top: 4rem;
     padding: 1rem;
   }
   body main .noticia p {
     font-size: 1.65rem;
+  }
+  body main .grid_estadios {
+    display: grid;
+    grid-template-columns: 70rem;
+    grid-template-rows: 55rem;
+    grid-row-gap: 4rem;
+    justify-content: center;
   }
   body .partidos .container {
     width: 80%;
@@ -578,24 +584,24 @@ body main .noticias a {
     font-size: 5px;
     /* 1rem = 5px */
   }
-  body header .container-fluid {
-    background-color: #0CA600;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    border-radius: 1rem;
-  }
-  body header .barra-busqueda {
-    margin-right: 4.5rem;
-  }
   body header input {
+    padding: 0.5rem;
     display: flex;
-    flex-direction: row;
-    border: solid 0rem;
+    flex-direction: column;
+    align-items: center;
+    width: 40rem;
+    border: none;
     border-radius: 1rem;
-    width: 15rem;
-    height: 4rem;
-    padding: 1.5rem;
+    font-size: 2rem;
+    background-color: #d3d3d3;
+  }
+  body header .navbar-toggler {
+    margin-left: 1rem;
+    margin-right: 13rem;
+    border: none;
+  }
+  body header .navbar-toggler-icon {
+    height: 5rem;
   }
   body main {
     font-size: 1rem;
@@ -610,12 +616,12 @@ body main .noticias a {
     margin-bottom: 3rem;
     margin-top: 1rem;
     margin-left: 100rem;
-    font-size: 3rem;
+    font-size: 4rem;
     color: black;
     font-family: sans-serif;
   }
   body main h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
   }
   body main h3 {
@@ -623,33 +629,14 @@ body main .noticias a {
     display: flex;
     justify-content: center;
   }
-  body main .noticia {
-    background-color: rgb(255, 255, 255);
-    max-width: 80rem;
-    max-height: 25rem;
-    display: flex;
-    align-items: start;
-    justify-items: center;
-    margin-top: 4rem;
-    padding: 1rem;
-  }
-  body main .noticia img {
-    width: 25rem;
-    margin-right: 2rem;
-    border-radius: 1rem;
-  }
   body main .noticia p {
-    font-size: 1.5rem;
-  }
-  body main .noticias a {
-    color: black;
-    text-decoration: none;
+    display: none;
   }
   body main .grid_estadios {
     display: grid;
-    grid-template-columns: 60rem;
-    grid-template-rows: 45rem;
-    grid-row-gap: 3rem;
+    grid-template-columns: 70rem;
+    grid-template-rows: 55rem;
+    grid-row-gap: 4rem;
     justify-content: center;
   }
   body main .ficha h2 {
@@ -663,9 +650,11 @@ body main .noticias a {
   }
   body main .capacidad li {
     font-size: 1.8rem;
+    margin-top: 1rem;
   }
   body main .info h2 {
     font-size: 2rem;
+    margin-top: 1.5rem;
   }
   body main .info ul {
     margin-top: 0.3rem;
