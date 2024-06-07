@@ -8,13 +8,14 @@
             .nav-item {
                 display: flex;
                 flex-direction: row;
-                margin: 0rem 0rem 0rem 2rem;
+                margin: 0rem 0rem 0rem 10rem;
                 min-width: 1rem;
                 justify-content: center;
                 margin-top: 2rem;
             }
             .nav-link {
-                margin-left: 5rem;
+                margin-left: 3rem;
+                margin-right: 3rem;
             }
             input {     
                 padding: 0.5rem;    
@@ -35,11 +36,6 @@
                 flex-direction: column;
                 align-items: center;
                 margin-top: 1rem;
-             .get-in-touch{
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-             }
              label {
                 font-size: 2rem;
              }
@@ -232,16 +228,17 @@
                 border: none;
     }
     .navbar-toggler-icon {
-        height: 5rem;
+                height: 5rem;
     }
           
         }
+        // fin header 
         main{ 
-            font-size: 1rem;
-            min-width: 0.5rem;
-            color: rgb(0, 0, 0);
-            font-family: sans-serif;
-            margin-bottom: 5rem;
+                font-size: 1rem;
+                min-width: 0.5rem;
+                color: rgb(0, 0, 0);
+                font-family: sans-serif;
+                margin-bottom: 5rem;
     
             h1 {
                 justify-content: center;
@@ -267,36 +264,12 @@
             }                  
                 .grid_estadios {
                     display: grid;
-                    grid-template-columns: 70rem;
-                    grid-template-rows: 55rem;
+                    grid-template-columns: 60rem;
+                    grid-template-rows: 50rem;
                     grid-row-gap: 4rem;
                     justify-content: center;
                    }
-                .ficha h2 {
-                    margin-left: 1.5rem;
-                }
-                .capacidad {
-                    margin-left: 10rem;
-                }
-                .capacidad h2 {
-                    font-size: 2rem;
-                }
-                .capacidad li {
-                    font-size: 1.8rem;
-                    margin-top: 1rem;
-        
-                }
-                .info h2{
-                    font-size: 2rem;
-                    margin-top: 1.5rem;
-                }
-                .info ul {
-                    margin-top: 0.3rem;
-                    margin-right: 18rem;            
-                }
-                .info li {
-                    font-size: 1.8rem;
-                }  
+          
             }
             .partidos {
                 .container {
@@ -330,6 +303,7 @@
                     height:6rem;
                     width: 5rem;
                 }
+                
             }
             
 }
