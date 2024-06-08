@@ -27,7 +27,12 @@
                 border-radius: 1rem;
                 font-size: 2rem;
                 background-color: #d3d3d3;
-    }            
+    }   
+    button.navbar-toggler-1 {
+        display: none;
+
+        
+    }         
         }
             // footer 
             footer {
@@ -77,7 +82,20 @@
                         } 
                     }
         }
-@media (min-width:669px) and (max-width:1024px){
+@media (min-width:992px) and (max-width:1024px) {
+    html {
+        font-size:7px; 
+        /* 1rem = 10px */
+    }
+    header {
+        button.navbar-toggler-1 {
+            display: none;
+        }
+        
+    }
+
+}        
+@media (min-width:669px) and (max-width:992px){
     html {
         font-size:7px; 
         /* 1rem = 10px */
@@ -93,7 +111,8 @@
                             border-radius: 1rem;
                             font-size: 2rem;
                             background-color: #d3d3d3;
-                }   
+                }
+                   
                 .navbar-toggler {
                             margin-left: 1rem;
                             margin-right: 13rem;

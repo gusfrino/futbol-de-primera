@@ -14,7 +14,15 @@ body .container-fluid {
   border-radius: 1rem;
   background-color: none;
 }
-body .navbar-toggler-icon {
+body button.navbar-toggler {
+  width: 15rem;
+  margin-right: 5rem;
+}
+body button.navbar-toggler-1 {
+  background-color: #0CA600;
+  margin-right: 2rem;
+}
+body button.navbar-toggler-1 .navbar-toggler-icon {
   width: 3.5rem;
 }
 body .navbar-brand {
@@ -449,6 +457,9 @@ body main .noticias a {
     font-size: 2rem;
     background-color: #d3d3d3;
   }
+  body header button.navbar-toggler-1 {
+    display: none;
+  }
   body footer {
     background-color: rgb(170, 168, 168);
     display: flex;
@@ -490,7 +501,16 @@ body main .noticias a {
     width: 80%;
   }
 }
-@media (min-width: 669px) and (max-width: 1024px) {
+@media (min-width: 992px) and (max-width: 1024px) {
+  html {
+    font-size: 7px;
+    /* 1rem = 10px */
+  }
+  header button.navbar-toggler-1 {
+    display: none;
+  }
+}
+@media (min-width: 669px) and (max-width: 992px) {
   html {
     font-size: 7px;
     /* 1rem = 10px */
