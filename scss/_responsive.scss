@@ -82,31 +82,40 @@
         font-size:7px; 
         /* 1rem = 10px */
     }
-    header {
-        input {     
-            padding: 0.5rem;    
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 40rem;
-            border: none;
-            border-radius: 1rem;
-            font-size: 2rem;
-            background-color: #d3d3d3;
-}            
-        .nav-item {
-            display: flex;
-            flex-direction: row;
-            margin: 0rem 0rem 0rem 2rem;
-            min-width: 1rem;
-            justify-content: center;
-            margin-top: 2rem;
-        }
-        .nav-link {
-            margin-left: 5rem;
-        }
-        .barra-busqueda {
-               margin-right: 6rem;
+    header {  
+                        input {     
+                            padding: 0.5rem;    
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            width: 40rem;
+                            border: none;
+                            border-radius: 1rem;
+                            font-size: 2rem;
+                            background-color: #d3d3d3;
+                }   
+                .navbar-toggler {
+                            margin-left: 1rem;
+                            margin-right: 13rem;
+                            border: none;
+                }
+                .navbar-toggler-icon {
+                            height: 5rem;
+                }
+                    
+                    .nav-item {
+                        display: flex;
+                        flex-direction: row;
+                        margin: 0rem 0rem 0rem 2rem;
+                        min-width: 1rem;
+                        justify-content: center;
+                        margin-top: 2rem;
+                    }
+                    .nav-link {
+                        margin-left: 5rem;
+                    }
+                    .barra-busqueda {
+                        margin-right: 6rem;
         }
     }
     body {
@@ -221,7 +230,15 @@
                 border-radius: 1rem;
                 font-size: 2rem;
                 background-color: #d3d3d3;
-    }   
+    }
+    .nav-item {
+        display: flex;
+        flex-direction: row;
+        margin: 0rem 0rem 0rem 2rem;
+        min-width: 1rem;
+        justify-content: center;
+        margin-top: 2rem;
+    }     
     .navbar-toggler {
                 margin-left: 1rem;
                 margin-right: 13rem;

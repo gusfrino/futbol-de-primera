@@ -9,9 +9,21 @@ body {
                         border-radius: 1rem;
                         background-color: none;
 
-                    }
+                    } 
+
+.navbar-toggler-icon {
+                        width: 3.5rem;
+        }            
     
-    ul { 
+        .navbar-brand{
+                        display: flex;
+                        flex-direction: column;
+                        width: 10rem;
+                        margin-left: 4rem;
+                        margin-top: 2rem;
+                        margin-bottom: 2rem;
+                    }
+    ul.navbar-nav { 
                         display: flex;
                         justify-content: center; 
                         align-items: center;
@@ -26,15 +38,31 @@ body {
                         padding: 0.5;
                     
         }
-    li .nav-item {
+
+    li.nav-item {
                          display: flex;
                          flex-direction: row;
-                         margin: 0rem 5rem 0rem 10rem;
-                         min-width: 1rem;
-                        justify-content: center;
-                        margin-top: 2rem;
-                       
+                         align-items: center;                
+    }   
+    div.collapse.navbar-collapse {
+        margin-left: 8rem;
     }
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 1rem;
+                font-size: 2.5rem;
+            }
+            li {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 20rem;
+            }
+            
+                    
+
     .container-search {
                         display: flex;
                         flex-direction: column;
@@ -66,24 +94,8 @@ body {
                     border-radius: 0.5rem;
 
                 }  
+     
 
-   .navbar-toggler {
-                    margin-left: 1rem;
-                    margin-right: 30rem;
-                    border: none;
-                }
-    .navbar-toggler-icon {
-                    width: 3.5rem;
-    }            
-
-    .navbar-brand{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    margin-top: 5rem;
-                    margin-bottom: 5rem;
-                }
         
         
             }

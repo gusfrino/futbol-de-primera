@@ -14,7 +14,18 @@ body .container-fluid {
   border-radius: 1rem;
   background-color: none;
 }
-body ul {
+body .navbar-toggler-icon {
+  width: 3.5rem;
+}
+body .navbar-brand {
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+body ul.navbar-nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,13 +39,26 @@ body ul {
   list-style: none;
   padding: 0.5;
 }
-body li .nav-item {
+body li.nav-item {
   display: flex;
   flex-direction: row;
-  margin: 0rem 5rem 0rem 10rem;
-  min-width: 1rem;
-  justify-content: center;
-  margin-top: 2rem;
+  align-items: center;
+}
+body div.collapse.navbar-collapse {
+  margin-left: 8rem;
+}
+body ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: 2.5rem;
+}
+body li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20rem;
 }
 body .container-search {
   display: flex;
@@ -65,22 +89,6 @@ body input {
 body button {
   padding: 0.3rem;
   border-radius: 0.5rem;
-}
-body .navbar-toggler {
-  margin-left: 1rem;
-  margin-right: 30rem;
-  border: none;
-}
-body .navbar-toggler-icon {
-  width: 3.5rem;
-}
-body .navbar-brand {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
 }
 
 body footer {
@@ -498,6 +506,14 @@ body main .noticias a {
     font-size: 2rem;
     background-color: #d3d3d3;
   }
+  header .navbar-toggler {
+    margin-left: 1rem;
+    margin-right: 13rem;
+    border: none;
+  }
+  header .navbar-toggler-icon {
+    height: 5rem;
+  }
   header .nav-item {
     display: flex;
     flex-direction: row;
@@ -608,6 +624,14 @@ body main .noticias a {
     border-radius: 1rem;
     font-size: 2rem;
     background-color: #d3d3d3;
+  }
+  body header .nav-item {
+    display: flex;
+    flex-direction: row;
+    margin: 0rem 0rem 0rem 2rem;
+    min-width: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
   }
   body header .navbar-toggler {
     margin-left: 1rem;
