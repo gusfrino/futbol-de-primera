@@ -81,21 +81,8 @@
                             width: 80%;
                         } 
                     }
-        }
-@media (min-width:992px) and (max-width:1024px) {
-    html {
-        font-size:7px; 
-        /* 1rem = 10px */
-    }
-    header {
-        button.navbar-toggler-1 {
-            display: none;
-        }
-        
-    }
-
-}        
-@media (min-width:669px) and (max-width:992px){
+        }       
+@media (min-width:669px) and (max-width:1024px){
     html {
         font-size:7px; 
         /* 1rem = 10px */
@@ -307,7 +294,7 @@
                    }
           
             }
-            .partidos {
+            .partidos {       
                 .container {
                     width: 80%;
                 } 

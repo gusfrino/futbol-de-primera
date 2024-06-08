@@ -14,16 +14,8 @@ body .container-fluid {
   border-radius: 1rem;
   background-color: none;
 }
-body button.navbar-toggler {
-  width: 15rem;
-  margin-right: 5rem;
-}
-body button.navbar-toggler-1 {
-  background-color: #0CA600;
-  margin-right: 2rem;
-}
-body button.navbar-toggler-1 .navbar-toggler-icon {
-  width: 3.5rem;
+body .navbar-toggler-icon {
+  width: 3rem;
 }
 body .navbar-brand {
   display: flex;
@@ -54,19 +46,6 @@ body li.nav-item {
 }
 body div.collapse.navbar-collapse {
   margin-left: 8rem;
-}
-body ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 1rem;
-  font-size: 2.5rem;
-}
-body li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 20rem;
 }
 body .container-search {
   display: flex;
@@ -165,6 +144,7 @@ body .partidos .info-ficha {
   position: relative;
 }
 body .partidos .equipo-1 {
+  list-style: none;
   padding: 0rem;
   display: flex;
   flex-direction: column;
@@ -174,6 +154,7 @@ body .partidos .equipo-1 {
   position: relative;
 }
 body .partidos .equipo-2 {
+  list-style: none;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -183,6 +164,7 @@ body .partidos .equipo-2 {
   position: relative;
 }
 body .partidos .fecha-fecha1 {
+  list-style: none;
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -275,6 +257,7 @@ body main .capacidad ul {
   margin-right: 8rem;
 }
 body main .capacidad li {
+  list-style: none;
   font-size: 1.5rem;
 }
 body main .info {
@@ -501,16 +484,7 @@ body main .noticias a {
     width: 80%;
   }
 }
-@media (min-width: 992px) and (max-width: 1024px) {
-  html {
-    font-size: 7px;
-    /* 1rem = 10px */
-  }
-  header button.navbar-toggler-1 {
-    display: none;
-  }
-}
-@media (min-width: 669px) and (max-width: 992px) {
+@media (min-width: 669px) and (max-width: 1024px) {
   html {
     font-size: 7px;
     /* 1rem = 10px */
