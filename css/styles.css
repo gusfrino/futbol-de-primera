@@ -274,6 +274,7 @@ body main .info h2 {
   text-decoration: underline;
 }
 body main .info ul {
+  list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: start;
